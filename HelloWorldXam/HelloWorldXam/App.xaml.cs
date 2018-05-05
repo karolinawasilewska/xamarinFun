@@ -13,7 +13,7 @@ namespace HelloWorldXam
 		{
 			InitializeComponent();
 
-			MainPage = new StackLayout();
+			MainPage = new NavigationPage(new LaunchPage());
 		}
 
 		protected override void OnStart ()

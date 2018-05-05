@@ -4,9 +4,20 @@
              x:Class="HelloWorldXam.LaunchPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" x:Name="MainPage" Text="MainPage" Clicked="MainPage_Clicked" />
+                <Button Grid.Row="1" x:Name="QuotesPage" Text="QuotesPage" Clicked="QuotesPage_Clicked" />
+                <Button Grid.Row="2" x:Name="StackLayoutPage" Text="StackLayout" Clicked="StackLayoutPage_Clicked" />
+                <Button Grid.Row="3" x:Name="InstagramPage" Text="InstagramPage" Clicked="InstagramPage_Clicked" />
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
