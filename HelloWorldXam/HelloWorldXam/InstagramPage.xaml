@@ -7,10 +7,34 @@
                     iOS="0,20,0,0"/>
     </ContentPage.Padding>
     <ContentPage.Content>
-        <StackLayout >
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="0">
+           
+            <Label Text="mojajoja_photography" Margin="10, 10, 0, 10" TextColor="Black" FontSize="Medium"/>
+            <Image Source="http://lorempixel.com/1920/1080/nature/3" Margin="0"/>
+            <Grid Padding="20" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" ColumnSpacing="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0"  Text="Like" TextColor="Blue"  />
+                    <Label Grid.Column="1" Text="Comment" TextColor="Blue" />
+                    <Label Grid.Column="2" Text="Share" TextColor="Blue" />
+                </Grid>
+                <BoxView Grid.Row="1" Color="#f0f0f0" HeightRequest="1"/>
+                <Label Grid.Row="2" Text="1000 likes" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                <Label Grid.Row="3" Text="This is a shot yesterday in Skanor, Sweden, when diving home, from a couple of days of work in Danmark"/> 
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
